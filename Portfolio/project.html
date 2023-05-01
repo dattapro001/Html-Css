@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#contact" class="contact">Contact</a>
+            <a href="#wrapper" class="btnLogin">Login</a>
+
+        </nav>
+    </header>
+
+
+    <section class="home"  id="home">
+        <div class="home-content">
+                  <h1>Hi I'm <span>Chinmoy Datta</span></h1>
+                  <div class="text-animate">
+                    <h3>Web Developer</h3>
+                  </div>
+                <p> This is my poltfolio website made by html,css and js. Where you can see my profile, If want you can contact with me the information
+                    given on contact me page.To see other features of my website you have to login/Registration first.
+                </p>
+        </div>
+     </section>
+    
+      <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <div class="about-img">
+            <img src="mug.jpg" alt="">
+            <span class="circle-img"></span>
+        </div>
+
+        <div class="about-content">
+            <h3>Front-End Developer</h3>
+            <P>Currently I am in leading university to complete my B.sc. Engineering. Like coding and very familiar with java,html,
+                css and current develop my skill on python and php. Interested in plamistry and astrology. My up-coming project based on
+                software management.Hopefull I will give my best on that.  
+            </P>
+        </div>
+    </section>  
+
+    <section class="contact" id="contact">
+        <h2 class="contact-header">Contact <span>Me!</span></h2>
+
+        <form action="#">
+        <div class="container">
+            <div class="input-field">
+            <input type="text" placeholder="Full Name" required> 
+            <span class="focus"></span>
+            </div>
+
+            <div class="input-field">
+                <input type="text" placeholder="Email" required> 
+                <span class="focus"></span>
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="input-field">
+            <input type="text" placeholder="Mobile" required> 
+            <span class="focus"></span>
+            </div>
+
+            <div class="input-field">
+                <input type="text" placeholder="Subject" required> 
+                <span class="focus"></span>
+                </div>
+        </div>
+
+        <div class="textarea-field">
+            <textarea cols="30" rows="30" placeholder="Your Message" required></textarea>
+            <span class="focus"></span>
+        </div>
+
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+        </form>
+    </section> 
+
+     <div class="wrapper" id="wrapper">
+        <span class="icon-closed">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
+
+        <div class="login-box">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="example 'mug007@gmail.com'"  type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input name="pass"  pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()]).{6,20}" title="contain 1 digit 1 uppercase 1 lowercase 1 special charecter
+                    minimum 6 length" type="password"  required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type ="checkbox">Remember me
+                    </label>
+                    <a href="#">Forgot Password</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#wrapper" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="register-box">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input name="name"  type="text" pattern="^(?=.*[a-z])(?=.*[0-9]).{5,10}" title="Contain of lowercase and number minimum 5 characters" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="example 'mug007@gmail.com'" type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input name="pass" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&-+=()]).{6,20}" title="contain 1 digit 1 uppercase 1 lowercase 1 special characters
+                    minimum 6 length" type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type ="checkbox">I am agree to term & condition
+                    </label>
+                    
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#wrapper" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+     </div>
+
+
+   
+
+     <script src="script.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
